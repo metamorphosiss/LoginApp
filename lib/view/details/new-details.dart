@@ -29,7 +29,7 @@ class _NewDetailsState extends State<NewDetails> {
     final enteredlastName = _controlLastName.text.isNum;
     final isEditingAmount = enterdAmount == null ||
         enterdAmount <= 0 ||
-        enterdAmount.toString().length != 11;
+        enterdAmount.toString().length != 10;
     if (_controlEmail.text.trim().isEmpty ||
         _controlFirstName.text.trim().isEmpty ||
         enteredFirstName ||
@@ -39,15 +39,16 @@ class _NewDetailsState extends State<NewDetails> {
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
-          title: const Text('invalid value'),
-          content: const Text(
-              '[please make sure that you have entered valid phone number,email,firstname,lastname or fill all objects]'),
+          title: Text('invalid value'.tr),
+          content: Text(
+              '[please make sure that you have entered valid phone number,email,firstname,lastname or fill all objects]'
+                  .tr),
           actions: [
             TextButton(
                 onPressed: () {
                   Get.back();
                 },
-                child: const Text('OK'))
+                child: Text('OK'.tr))
           ],
         ),
       );
@@ -59,7 +60,7 @@ class _NewDetailsState extends State<NewDetails> {
           email: _controlEmail.text,
           firstName: _controlFirstName.text,
           lastName: _controlLastName.text,
-          number: enterdAmount ),
+          number: enterdAmount),
     );
     Get.back();
   }
@@ -75,36 +76,36 @@ class _NewDetailsState extends State<NewDetails> {
               controller: _controlFirstName,
               maxLength: 10,
               keyboardType: TextInputType.name,
-              decoration: const InputDecoration(
-                border: UnderlineInputBorder(
+              decoration: InputDecoration(
+                border: const UnderlineInputBorder(
                   borderRadius: BorderRadius.all(
                     Radius.circular(10),
                   ),
                 ),
-                label: Text('write your first name'),
+                label: Text('write your first name'.tr),
               ),
             ),
             TextField(
               controller: _controlLastName,
               maxLength: 50,
               keyboardType: TextInputType.name,
-              decoration: const InputDecoration(
-                label: Text('write your last name'),
+              decoration: InputDecoration(
+                label: Text('write your last name'.tr),
               ),
             ),
             TextField(
               controller: _controlEmail,
               keyboardType: TextInputType.emailAddress,
-              decoration: const InputDecoration(
-                label: Text('write your email'),
+              decoration: InputDecoration(
+                label: Text('write your email'.tr),
               ),
             ),
             TextField(
               controller: _controlNum,
               maxLength: 11,
               keyboardType: TextInputType.number,
-              decoration: const InputDecoration(
-                label: Text('write ur own phone number'),
+              decoration: InputDecoration(
+                label: Text('write ur own phone number'.tr),
               ),
             ),
             const SizedBox(
@@ -112,13 +113,14 @@ class _NewDetailsState extends State<NewDetails> {
             ),
             ElevatedButton(
               onPressed: _submitExpenseData,
-              child: const Text('save Detail'),
+              child: Text('save Detail'.tr),
             ),
+            const SizedBox(height: 10),
             TextButton(
               onPressed: () {
                 Get.back();
               },
-              child: const Text('cancel'),
+              child: Text('cancel'.tr),
             ),
           ],
         ),

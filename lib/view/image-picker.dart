@@ -30,7 +30,7 @@ class ImagePicker extends StatelessWidget {
               onPressed: () {
                 controller.imagePicker();
               },
-              child: const Text('pick Image'),
+              child:  Text('pick Image'.tr),
             ),
           ],
         ),
@@ -39,7 +39,7 @@ class ImagePicker extends StatelessWidget {
           onPressed: () {
             Get.back();
           },
-          label: const Text('back to main page')),
+          label:  Text('back to main page'.tr)),
     );
   }
 }

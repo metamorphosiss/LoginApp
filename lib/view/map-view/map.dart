@@ -56,7 +56,7 @@ class _MaplocationState extends State<Maplocation> {
     _getcurrentLocation();
     super.initState();
   }
-
+ 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -105,7 +105,7 @@ class _MaplocationState extends State<Maplocation> {
             onPressed: () {
               Get.back();
             },
-            label: const Text('back to main page')),
+            label:  Text('back to main page'.tr)),
       ),
     );
   }

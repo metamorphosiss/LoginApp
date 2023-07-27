@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:flutter_application_1/model/controller/internationlization/get_multi_language.dart';
 
 class LoginBtn extends StatelessWidget {
-  const LoginBtn({super.key,required this.onTap});
+   LoginBtn({super.key,required this.onTap});
     final Function()? onTap;
-
+ final myController = Get.put(GetMultiLanguage());
 @override
   Widget build(BuildContext context) {
     return GestureDetector(
@@ -14,16 +16,16 @@ class LoginBtn extends StatelessWidget {
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8),
         ),
-        child: const Center(
-          child: Text(
-            "Sign In",
-            style: TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 16,
+        child:  Center(
+            child: Text(
+            'Sign In'.tr,
+              style:const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+              ),
             ),
           ),
         ),
-      ),
     );
   }
 }

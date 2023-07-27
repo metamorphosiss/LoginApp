@@ -68,6 +68,6 @@ class _HomePageState extends State<Comments> {
             onPressed: () {
               Get.back();
             },
-            label: const Text('back to main page')));
+            label:  Text('back to main page'.tr)));
   }
 }
