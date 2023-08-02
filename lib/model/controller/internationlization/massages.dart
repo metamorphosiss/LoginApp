@@ -9,6 +9,8 @@ class Masseges extends Translations {
           'password': 'password',
           'forgot password': 'forgot password',
           'Sign In': 'Sign In',
+          'Sign Up': 'Sign Up',
+          'submit': 'submit',
           'item deleted': 'item deleted',
           'undo': 'undo',
           'please add some details': 'please add some details',
@@ -31,10 +33,27 @@ class Masseges extends Translations {
           'show me commends': 'show me commends',
           'image selection': 'image selection',
           'back': 'back',
-          'back to main page':'back to main page',
-          'pick Image':'pick Image',
-          'login page':'login page',
-          'main screen':'main screen',
+          'back to main page': 'back to main page',
+          'pick Image': 'pick Image',
+          'login page': 'login page',
+          'main screen': 'main screen',
+          'invalid insert': 'invalid insert',
+          '[username can contains number but cant be only number itself.try new one!]':
+              '[username can contains number but cant be only number itself.try new one!]',
+          '[please make sure that u have filled both username and password section]':
+              '[please make sure that u have filled both username and password section]',
+          '[this username is already exist]':
+              '[this username is already exist]',
+          '[wrong username  please try again!!':
+              '[wrong username  please try again!!',
+          '[wrong password please try again!!':
+              '[wrong password please try again!!',
+          '[please create a user account first!!':
+              '[please create a user account first!!',
+          '[wrong username and password please try again!!':
+              '[wrong username and password please try again!!',
+          'showing user account': 'showing user account',
+          'there is no user account yet!!!':'there is no user account yet!!!',
         },
         'ar_QA': {
           'Welcome to my demo App': 'به برنامه من خوش آمدید',
@@ -42,6 +61,8 @@ class Masseges extends Translations {
           'password': 'رمز عبور',
           'forgot password': ' رمز رو فراموش کردی !',
           'Sign In': 'ورود',
+          'Sign Up': 'ثبت نام',
+          'submit': 'ثبت',
           'item deleted': ' محتوا حذف شد',
           'undo': 'برگشت محتوا',
           'please add some details': 'لطفا جزییات مورد نظر را اظافه کنید',
@@ -64,10 +85,27 @@ class Masseges extends Translations {
           'show me commends': 'نمایش کامنت ها',
           'image selection': 'انتخاب عکس',
           'back': 'بازگشت',
-          'back to main page':'بازگشت به صفحه اصلی',
-          'pick Image':'انتخاب عکس',
-          'login page':'صفحه ورود',
-          'main screen':'صفحه اصلی',
+          'back to main page': 'بازگشت به صفحه اصلی',
+          'pick Image': 'انتخاب عکس',
+          'login page': 'صفحه ورود',
+          'main screen': 'صفحه اصلی',
+          'invalid insert': 'درج نامعتبر',
+          '[username can contains number but cant be only number itself.try new one!]':
+              '[تام کاربری می تواند شامل عدد شود ،ولی  نمی تواند فقط از عدد تشکیل شود.دوباره سعی کن ]',
+          '[please make sure that u have filled both username and password section]':
+              '[لطفا از پر بودن قسمت های حساب کاربری و رمز عبور اطمینان حاصل فرمایید]',
+          '[this username is already exist]':
+              'این حساب کاربری قبلا ثبت شده است',
+          '[wrong username  please try again!!':
+              'کلمه عبور اشتباه است.لطفا دوباره سعی کنید',
+          '[wrong password please try again!!':
+              'رمز عبور اشتباه است.لطفا دوباره سعی کنید',
+          '[please create a user account first!!':
+              'لطفا اول حساب کاربری ایجاد کنید',
+          '[wrong username and password please try again!!':
+              'نام کاربری و رمز عبور اشتباه است.دوباره سعی کن!',
+          'showing user account': 'نمایش حساب کاربری',
+          'there is no user account yet!!!':'هنوز حساب کاربری ایجاد نشده است',
         }
       };
 }

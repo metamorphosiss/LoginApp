@@ -6,7 +6,7 @@ class LoginTextFiled extends StatelessWidget {
       required this.controller,
       required this.hintText,
       required this.obscureText});
-  final controller;
+  final  controller;
   final String hintText;
   final bool obscureText;
 
